@@ -1,0 +1,98 @@
+/* app global css */
+::-webkit-scrollbar {
+  right: 2px;
+  border-radius: 9px;
+  background: rgb(13 71 161 / 20%);
+  overflow: visible;
+  height: 13px;
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  background-color: rgb(13 71 161 / 75%);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.right-rounded-borders {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.rounded-borders-all {
+  border-radius: 10px !important;
+}
+
+.menu-links-item {
+  letter-spacing: 0.7px;
+  border-radius: 10px;
+  margin-top: 13px;
+  min-height: 30px;
+  padding: 8px 4px 8px 15px;
+  transition: none;
+}
+
+.q-drawer {
+  background: none;
+}
+
+/* .drawer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+} */
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.drawer-content-wrapper {
+  flex-grow: 1; /* The scrollable area will grow to take available space */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.drawer-bottom {
+  flex-shrink: 0; /* Prevents the footer from shrinking */
+  height: auto;
+  padding: 16px;
+}
+
+.full-height-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes the q-page take the full viewport height */
+}
+
+.content {
+  flex-grow: 1; /* Ensures the content fills the remaining space */
+  display: flex;
+  width: 100%;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.inner-content {
+  flex-grow: 1; /* Expands to take available space */
+  max-width: 100%; /* Optional: Set a maximum width */
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.page-content {
+  margin: 20px 0 0 0;
+  overflow: auto !important;
+}
