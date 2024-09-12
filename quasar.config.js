@@ -46,10 +46,10 @@ module.exports = configure(function (ctx) {
       vueRouterMode: "hash", // available values: 'hash', 'history'
       env: {
         // API_HOST: "https://jsonplaceholder.typicode.com",
-        API_HOST: "https://api.uerm.edu.ph/aims",
-        DEV_HOST: "http://10.107.0.10:4443/aims",
-        PROJECT_NAME: "UERM AIMS",
-        PROJECT_SHORT_NAME: "UERMAims",
+        API_HOST: "https://localapi.uerm.edu.ph:8081/uerm-infirmary",
+        DEV_HOST: "http://10.107.0.10:3000/uerm-infirmary",
+        PROJECT_NAME: "UERM Infirmary",
+        PROJECT_SHORT_NAME: "UERMInfirmary",
         PROJECT_VERSION: "v0.1",
         HTTP_REQ_TIMEOUT: 1200000,
       },

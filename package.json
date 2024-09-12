@@ -1,8 +1,8 @@
 {
-  "name": "uerm-aims",
+  "name": "uerm-infirmary",
   "version": "0.0.1",
-  "description": "A UERM Academic Information Management System",
-  "productName": "UERM AIMS",
+  "description": "An Infirmary Application for UERM",
+  "productName": "UERM Infirmary",
   "author": "JP Pascua <101083967+jpmpuerm@users.noreply.github.com>",
   "private": true,
   "scripts": {
