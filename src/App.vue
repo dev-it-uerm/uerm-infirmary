@@ -1,10 +1,10 @@
 <template>
-  <router-view />
   <NotifyMessage
     v-if="notification.displayNotify"
     :message="notification.message"
     :type="notification.type"
   ></NotifyMessage>
+  <router-view />
 </template>
 
 <script>
@@ -26,8 +26,8 @@ export default defineComponent({
   },
   methods: {
     async initializeStore() {
-      // await this.$store.dispatch("config/getProcessors");
-      // await this.$store.dispatch("config/getApplications");
+      await this.$store.dispatch("config/getFieldGroups");
+      await this.$store.dispatch("config/getFields");
     },
   },
 });

@@ -3,7 +3,7 @@
     clickable
     tag="a"
     :to="link"
-    class="q-pl-md menu-links-item"
+    class="q-pl-md menu-links-item bg-primary shadow-4"
     active-class="bg-secondary text-primary"
   >
     <q-item-section v-if="icon" avatar>
@@ -35,6 +35,10 @@ export default defineComponent({
     icon: {
       type: String,
       default: "",
+    },
+
+    children: {
+      type: Array,
     },
   },
 });

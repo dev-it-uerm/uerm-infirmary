@@ -1,23 +1,23 @@
-export function processors(state) {
-  return state.processors;
+export function fieldGroups(state) {
+  return state.fieldGroups;
 }
 
-export function processorsOptions(state) {
-  return state.processorsOptions;
+export function fieldGroupsGrouped(state) {
+  return state.fieldGroupsGrouped;
 }
 
-export function processorsHashMap(state) {
-  return state.processorsHashMap;
+export function fieldGroupsHashMap(state) {
+  return state.fieldGroupsHashMap;
 }
 
-export function applications(state) {
-  return state.applications;
+export function fields(state) {
+  return state.fields;
 }
 
-export function applicationsOptions(state) {
-  return state.applicationsOptions;
+export function fieldsGrouped(state) {
+  return state.fieldsGrouped;
 }
 
-export function applicationsHashMap(state) {
-  return state.applicationsHashMap;
+export function fieldsHashMap(state) {
+  return state.fieldsHashMap;
 }

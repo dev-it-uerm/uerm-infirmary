@@ -1,11 +1,11 @@
 export default function () {
   return {
     // Model of the data
-    processors: [],
-    processorsOptions: [],
-    processorsHashMap: {},
-    applications: [],
-    applicationsOptions: [],
-    applicationsHashMap: {},
+    fieldGroups: [],
+    fieldGroupsGrouped: [],
+    fieldGroupsHashMap: {},
+    fields: [],
+    fieldsGrouped: [],
+    fieldsHashMap: {},
   };
 }

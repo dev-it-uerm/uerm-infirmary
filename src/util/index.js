@@ -135,6 +135,13 @@ export const generateEntityCode = function (entityName) {
   return entityName.replace(/[aeiou\s\W]/gi, "").toLowerCase();
 };
 
+export const getFirstLetters = (str) => {
+  return str
+    .split(" ")
+    .map((word) => (word ? word[0] : ""))
+    .join("");
+};
+
 export const cloneArrOfObj = function (arr) {
   // Shallow clone only, make sure objects in array are all flat
   return arr.map((obj) => ({ ...obj }));
@@ -860,4 +867,24 @@ export const getObjectValuesLength = async function (objects) {
     }
     return length;
   }
+};
+
+export const convertArrObjToKeyValue = async function (
+  arr,
+  arrKey = "code",
+  arrValue = "value"
+) {
+  return arr.map((obj) => {
+    const [key, value] = Object.entries(obj)[0]; // Get the key-value pair
+    return { [arrKey]: key, [arrValue]: value };
+  });
+};
+
+export const replacePayload = async (payload, state) => {
+  if (state === undefined) {
+    return;
+  }
+  return {
+    [payload.key]: state[payload.refKey],
+  };
 };

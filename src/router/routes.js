@@ -5,63 +5,35 @@ const routes = [
     children: [{ path: "", component: () => import("pages/IndexPage.vue") }],
   },
   {
-    path: "/home",
+    path: "/dashboard",
     component: () => import("layouts/MainLayout.vue"),
     children: [{ path: "", component: () => import("pages/HomePage.vue") }],
   },
   {
-    path: "/students",
+    path: "/nurses",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/Students/DashboardPage.vue") },
+      { path: "", component: () => import("pages/NursesModulePage.vue") },
     ],
   },
+  // {
+  //   path: "/registration",
+  //   component: () => import("layouts/MainLayout.vue"),
+  //   children: [
+  //     { path: "", component: () => import("pages/RegistrationPage.vue") },
+  //   ],
+  // },
   {
-    path: "/faculty",
+    path: "/doctors",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/Faculty/DashboardPage.vue") },
-    ],
-  },
-  {
-    path: "/registrar",
-    component: () => import("layouts/MainLayout.vue"),
-    children: [
-      {
-        path: "",
-        component: () => import("pages/Registrar/DashboardPage.vue"),
-      },
+      { path: "", component: () => import("pages/DoctorsModulePage.vue") },
     ],
   },
   {
     path: "/tools",
     component: () => import("layouts/MainLayout.vue"),
-    children: [
-      {
-        path: "",
-        component: () => import("pages/Configs/IndexPage.vue"),
-      },
-    ],
-  },
-  {
-    path: "/configs",
-    component: () => import("layouts/MainLayout.vue"),
-    children: [
-      {
-        path: "",
-        component: () => import("pages/Configs/IndexPage.vue"),
-      },
-    ],
-  },
-  {
-    path: "/insights",
-    component: () => import("layouts/MainLayout.vue"),
-    children: [
-      {
-        path: "",
-        component: () => import("pages/Insights/IndexPage.vue"),
-      },
-    ],
+    children: [{ path: "", component: () => import("pages/ToolsPage.vue") }],
   },
 
   // Always leave this as last one,

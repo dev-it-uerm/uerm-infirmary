@@ -63,7 +63,7 @@ export async function request(context, arg) {
   } catch (err) {
     if (process.env.DEV) console.log(err);
     if (detailed) {
-      console.log(err.response);
+      // console.log(err.response);
       if (err.response !== undefined) {
         if (err.response.data.tokenError !== undefined) {
           context.dispatch("logoffUser", true);
@@ -86,6 +86,8 @@ export async function request(context, arg) {
         }, 1500);
         return false;
       }
+
+      // console.log(err);
       let notifPayload = {
         displayNotify: true,
         message: `${err}`,

@@ -4,6 +4,7 @@ import { createStore } from "vuex";
 // import example from './module-example'
 import helpers from "./helpers";
 import config from "./config";
+import encounters from "./encounters";
 import users from "./users";
 /*
  * If not building with SSR mode, you can
@@ -20,6 +21,7 @@ export default store(function (/* { ssrContext } */) {
       // example
       helpers,
       config,
+      encounters,
       users,
     },
 
