@@ -292,6 +292,7 @@
                       label="REFER"
                       color="secondary"
                       text-color="primary"
+                      @click="bools.referralDialog = true"
                     ></q-btn>
                   </span>
                 </div>
@@ -487,6 +488,10 @@
       </q-layout>
     </q-card>
   </q-dialog>
+
+  <q-dialog v-model="bools.referralDialog">
+    <referral-dialog></referral-dialog>
+  </q-dialog>
 </template>
 
 <script>
@@ -494,6 +499,7 @@ const utils = require("src/util");
 import { defineComponent, defineAsyncComponent } from "vue";
 import { mapGetters } from "vuex";
 import MainField from "src/components/FieldTypes/MainField.vue";
+import ReferralDialog from "./ReferralDialog.vue";
 
 export default defineComponent({
   name: "EncounterDialog",
@@ -513,6 +519,7 @@ export default defineComponent({
     diagnostichistory: defineAsyncComponent(() =>
       import("src/components/FieldGroupHelpers/DiagnosticHistory.vue")
     ),
+    ReferralDialog,
   },
   data() {
     return {
@@ -524,6 +531,7 @@ export default defineComponent({
         rightPatientDrawer: true,
         contentLoading: false,
         editMode: false,
+        referralDialog: false,
       },
       currentEncounter: {
         code: "",

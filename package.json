@@ -13,7 +13,9 @@
   "dependencies": {
     "@chenfengyuan/vue-barcode": "2",
     "@quasar/cli": "^2.4.1",
-    "@quasar/extras": "^1.16.12",
+    "@quasar/extras": "^1.16.15",
+    "@tensorflow-models/body-pix": "^2.2.1",
+    "@tensorflow/tfjs": "^4.22.0",
     "apexcharts": "^3.33.1",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
@@ -23,7 +25,7 @@
     "jspdf": "^2.5.1",
     "jwt-decode": "^3.1.2",
     "pdfmake": "^0.2.6",
-    "quasar": "^2.16.9",
+    "quasar": "^2.17.5",
     "v-idle-3": "^0.3.13",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0",
@@ -36,7 +38,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
-    "@quasar/app-webpack": "3.13.4",
+    "@quasar/app-webpack": "3.15.1",
     "@quasar/quasar-app-extension-qpdfviewer": "^2.0.0-alpha.6",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.1.0",

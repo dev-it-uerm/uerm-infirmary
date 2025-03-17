@@ -111,7 +111,7 @@
     <q-drawer
       v-model="bools.drawer"
       side="right"
-      class="drawer rounded-borders-all"
+      class="drawer rounded-borders-all bg-white"
     >
       <!-- Logo and Header Section -->
       <div
